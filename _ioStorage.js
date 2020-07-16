@@ -37,9 +37,9 @@ var b_count=0;
 var c_size=10;
 function progressBar_Storage() {
 for(i=0; i<document.getElementsByTagName("input").length; i++) {
-if(document.getElementsByTagName("input")[i].value=="На склад" &&
+if(document.getElementsByTagName("input")[i].value=="РќР° СЃРєР»Р°Рґ" &&
    document.getElementsByTagName("input")[i].alt=="" ||
-   document.getElementsByTagName("input")[i].value=="В сумку" &&
+   document.getElementsByTagName("input")[i].value=="Р’ СЃСѓРјРєСѓ" &&
    document.getElementsByTagName("input")[i].alt=="") {
 document.getElementsByTagName("input")[i].style.backgroundColor="red";
 document.getElementsByTagName("input")[i].alt=1;
@@ -63,8 +63,8 @@ check_Storage();
 
 function check_Storage() {
 for(i=0; i<document.getElementsByTagName("input").length; i++) {
-if(document.getElementsByTagName("input")[i].value=="На склад" ||
-   document.getElementsByTagName("input")[i].value=="В сумку") {
+if(document.getElementsByTagName("input")[i].value=="РќР° СЃРєР»Р°Рґ" ||
+   document.getElementsByTagName("input")[i].value=="Р’ СЃСѓРјРєСѓ") {
 document.getElementsByTagName("input")[i].style.backgroundColor="lawngreen";
 document.getElementsByTagName("input")[i].value="check";
 Storage_parm=new Array();
@@ -74,12 +74,12 @@ return goStorage(Storage_parm[0],Storage_parm[1]);
 }}
 top.frames["d_pers"].document.getElementById("t").innerHTML=""
 +"<a href=\"#\" onclick=\"AddJS(1,'_ioStorage.js');byid('t').innerHTML=LoadImg;\" "
-+"style=\"margin-left:55%;\">[Склад/Сумка]</a>";
++"style=\"margin-left:55%;\">[РЎРєР»Р°Рґ/РЎСѓРјРєР°]</a>";
 document.location=document.location;
 }
 
-if(location.host=="forest.apeha.ru" || !top.frames["d_pers"].LocSite("value","INPUT","Сумка")) {
-top.frames["d_pers"].document.getElementById("t").innerHTML="Error «Сумка» not found.";
+if(location.host=="forest.apeha.ru" || !top.frames["d_pers"].LocSite("value","INPUT","РЎСѓРјРєР°")) {
+top.frames["d_pers"].document.getElementById("t").innerHTML="Error В«РЎСѓРјРєР°В» not found.";
 } else {
 top.frames["d_pers"].document.getElementById("t").innerHTML=top.frames["d_pers"].LoadImg;
 // READY-Storage

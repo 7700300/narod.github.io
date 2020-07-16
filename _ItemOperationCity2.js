@@ -40,7 +40,7 @@ element.parentNode.insertBefore(text, element);
 }
 
 function ItemOperationCity(a) {
-if(a==0) { // снять
+if(a==0) { // СЃРЅСЏС‚СЊ
 if(Reg.test(txt)) {
 var RegArray=Reg.exec(txt);
 txt=txt.replace(RegArray[1], "false");
@@ -66,17 +66,17 @@ return document.location="room.html";
 top.frames["d_pers"].document.getElementById("t").innerHTML=""
 +"<a href=\"javascript:byid('t').innerHTML=LoadImg;void(0);\" "
 +"onclick=\"top.frames['d_pers'].ioTitle=0;AddJS(1,'_ItemOperationCity2.js');\" "
-+"style=margin-left:70%;>[ОДЕТЬ]</a>";
++"style=margin-left:70%;>[РћР”Р•РўР¬]</a>";
 document.location="room.html";
 }
 }
-if(a==1) { // одеть
+if(a==1) { // РѕРґРµС‚СЊ
 if(!Reg.test(txt)) {
 if(ioLocVar<top.frames["d_pers"].iTempData.length) {
 WarningLight(1,"actUser-Wear="+top.frames['d_pers'].iTempData[ioLocVar]); // step_1
 ioLocVar++;
 } else {
-top.frames["d_pers"].document.getElementById("t").innerHTML="<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');\" style=margin-left:70%; title="+a+">[Раздеть]</a>";
+top.frames["d_pers"].document.getElementById("t").innerHTML="<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');\" style=margin-left:70%; title="+a+">[Р Р°Р·РґРµС‚СЊ]</a>";
 document.location="room_mode_0_type_7.chtml";
 }}
 }
@@ -93,11 +93,11 @@ WarningLight(2,"actUser-Wear="+ioDressLow[ioLocVar]); // step_2
 ioLocVar++;
 } else {
 top.frames["d_pers"].document.getElementById("t").innerHTML=""
-+"<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');\" style=margin-left:70%; title="+a+">[Раздеть]</a>";
++"<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');\" style=margin-left:70%; title="+a+">[Р Р°Р·РґРµС‚СЊ]</a>";
 document.location="room_mode_0_type_7.chtml";
 }}
 } // end-Low
-if(a==3) { // одеть комплект #2
+if(a==3) { // РѕРґРµС‚СЊ РєРѕРјРїР»РµРєС‚ #2
 if(!Reg.test(txt)) {
 if(ioLocVar<ioDressHigh.length) {
 if(ioDressHigh[ioLocVar]==46687644 ||
@@ -108,11 +108,11 @@ WarningLight(3,"actUser-Wear="+ioDressHigh[ioLocVar]); // step_3
 }
 ioLocVar++;
 } else {
-top.frames["d_pers"].document.getElementById("t").innerHTML="<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');\" style=margin-left:70%; title="+a+">[Раздеть]</a>";
+top.frames["d_pers"].document.getElementById("t").innerHTML="<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');\" style=margin-left:70%; title="+a+">[Р Р°Р·РґРµС‚СЊ]</a>";
 document.location="room_mode_0_type_7.chtml";
 }}
 }
-if(a==4) { // одеть комплект #3
+if(a==4) { // РѕРґРµС‚СЊ РєРѕРјРїР»РµРєС‚ #3
 if(!Reg.test(txt)) {
 if(ioLocVar<ioDressMedium.length) {
 if(ioDressMedium[ioLocVar]==7607625 ||
@@ -123,7 +123,7 @@ WarningLight(4,"actUser-Wear="+ioDressMedium[ioLocVar]); // step_4
 }
 ioLocVar++;
 } else {
-top.frames["d_pers"].document.getElementById("t").innerHTML="<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');\" style=margin-left:70%; title="+a+">[Раздеть]</a>";
+top.frames["d_pers"].document.getElementById("t").innerHTML="<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');\" style=margin-left:70%; title="+a+">[Р Р°Р·РґРµС‚СЊ]</a>";
 document.location="room_mode_0_type_7.chtml";
 }}
 }
@@ -138,13 +138,13 @@ WarningLight(5,"actUser-Wear="+ioDressVeryLow[ioLocVar]); // step_5
 ioLocVar++;
 } else {
 top.frames["d_pers"].document.getElementById("t").innerHTML=""
-+"<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');\" style=margin-left:70%; title="+a+">[Раздеть]</a>";
++"<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');\" style=margin-left:70%; title="+a+">[Р Р°Р·РґРµС‚СЊ]</a>";
 document.location="room_mode_0_type_7.chtml";
 }}
 } // end-VeryLow
 }
-if(location.host=="forest.apeha.ru" || !top.frames["d_pers"].LocSite("value","INPUT","Сумка")) {
-top.frames["d_pers"].document.getElementById("t").innerHTML="Error «Сумка» not found.";
+if(location.host=="forest.apeha.ru" || !top.frames["d_pers"].LocSite("value","INPUT","РЎСѓРјРєР°")) {
+top.frames["d_pers"].document.getElementById("t").innerHTML="Error В«РЎСѓРјРєР°В» not found.";
 } else {
 top.frames["d_pers"].document.getElementById("t").innerHTML=top.frames["d_pers"].LoadImg;
 if(Reg.test(txt) && top.frames["d_pers"].ioTitle==0) {

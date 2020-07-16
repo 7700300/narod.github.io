@@ -1,4 +1,4 @@
-// Слабоумие и отвага
+// РЎР»Р°Р±РѕСѓРјРёРµ Рё РѕС‚РІР°РіР°
 var hostname_oil=/https:\/\/(.+)\//.exec(document.getElementsByTagName("script")[document.getElementsByTagName("script").length-1].src);
 hostname_oil=hostname_oil[1];
 
@@ -25,7 +25,7 @@ var LoadImg="<img src=https://7700300.github.io/narod.github.io/img/arrow/loadin
 var element_limit_hp=""
 +"<span style=\"margin-left:4px;padding-left:12px;"
 +"background:#D4D0C8 url(https://"+hostname_oil+"/img/arrow/ico_lifeup.png) no-repeat;"
-+"color:#D4D0C8;border:1px solid black;\" title=\"Лимит HP\">"
++"color:#D4D0C8;border:1px solid black;\" title=\"Р›РёРјРёС‚ HP\">"
 +"<span onclick=\""
 +"this.style.color='red';"
 +"document.getElementById('limitHP50').style.color='black';"
@@ -126,7 +126,7 @@ frames["channel_4"].location="ability.chtml?actBattle-ChangeAstralLevel="+astral
 +(ME.astral_level+1);
 setTimeout(""
 +"byid('astral1').style.visibility='visible';"
-+"byid('astral1').innerHTML='Астрал '+(ME.astral_level+1);",188000);
++"byid('astral1').innerHTML='РђСЃС‚СЂР°Р» '+(ME.astral_level+1);",188000);
 astral_tm=setTimeout("ChangeAstralLevel(1)",188000);
 }}
 if(OnOffguard==0) setTimeout("actReload()",1500);
@@ -154,68 +154,68 @@ setTimeout("ChangeAstralLevel(2)",777);
 }
 
 portal_parm=new Array();
-function ItemOperationCity(a) { // Сумка
+function ItemOperationCity(a) { // РЎСѓРјРєР°
 if(a==0) {
 top.frames["d_act"].location="room.html";
 byid("t").innerHTML=""
 +"<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');byid('t').innerHTML=LoadImg;\" "
-+"style=\"margin-left:50%;\">[Раздеть/Одеть]</a>";
++"style=\"margin-left:50%;\">[Р Р°Р·РґРµС‚СЊ/РћРґРµС‚СЊ]</a>";
 }
 if(a==1) {
 top.frames["d_act"].location="smith.html";
 byid("t").innerHTML=""
 +"<a href=\"#\" onclick=\"AddJS(1,'_ioRepair.js');byid('t').innerHTML=LoadImg;\" "
-+"style=\"margin-left:60%;\">[Чинить всё]</a>";
++"style=\"margin-left:60%;\">[Р§РёРЅРёС‚СЊ РІСЃС‘]</a>";
 }
 if(a==2) {
 byid("t").innerHTML=""
 +"<a href=\"#\" onclick=\"top.frames['d_act'].location='privsmith.html?unick='+d.nk+'';\" "
-+"style=\"margin-left:60%;\">[В Кузницу]</a>";
++"style=\"margin-left:60%;\">[Р’ РљСѓР·РЅРёС†Сѓ]</a>";
 }
 if(a==3) {
 byid("t").innerHTML=""
 +"<a href=\"#\" onclick=\"AddJS(1,'_ioStorage.js');byid('t').innerHTML=LoadImg;\" "
-+"style=\"margin-left:55%;\">[Склад/Сумка]</a>";
++"style=\"margin-left:55%;\">[РЎРєР»Р°Рґ/РЎСѓРјРєР°]</a>";
 }
 if(a==4) {
 portal_parm[3]="<a href=\"#\" onclick=\"byid('t').innerHTML=portal_parm[4];\" "
-+"style=\"margin-left:45%;\">[Огран]</a>"
++"style=\"margin-left:45%;\">[РћРіСЂР°РЅ]</a>"
 +"<a href=\"#\" onclick=\"byid('t').innerHTML=portal_parm[5];\" "
-+">[Вставка]</a>";
++">[Р’СЃС‚Р°РІРєР°]</a>";
 portal_parm[0]="<a href=\"#\" onclick=\"byid('t').innerHTML=portal_parm[1];\" "
-+"style=\"margin-left:30%;\">[Лесопил]</a>"
++"style=\"margin-left:30%;\">[Р›РµСЃРѕРїРёР»]</a>"
 +"<a href=\"#\" onclick=\"byid('t').innerHTML=portal_parm[2];\" "
-+">[Шахта]</a>";
++">[РЁР°С…С‚Р°]</a>";
 portal_parm[1]="<img src=\"sawmill.html?actUser-GoToArenaFromHouse="+MyHome+"&room=512\" "
 +"onError=\"top.frames['d_act'].location='sawmill_mode_3.html';"
-+"byid('portal').innerHTML='Портал в Лесопилку';\""
-+" width=1 height=16 border=0><span id=portal>Вход в портал..</span>";
++"byid('portal').innerHTML='РџРѕСЂС‚Р°Р» РІ Р›РµСЃРѕРїРёР»РєСѓ';\""
++" width=1 height=16 border=0><span id=portal>Р’С…РѕРґ РІ РїРѕСЂС‚Р°Р»..</span>";
 portal_parm[2]="<img src=\"mine.html?actUser-GoToArenaFromHouse="+MyHome+"&room=512\" "
 +"onError=\"top.frames['d_act'].location='mine_mode_3.html';"
-+"byid('portal').innerHTML='Портал в Плавильный цех';\""
-+" width=1 height=16 border=0><span id=portal>Вход в портал..</span>";
++"byid('portal').innerHTML='РџРѕСЂС‚Р°Р» РІ РџР»Р°РІРёР»СЊРЅС‹Р№ С†РµС…';\""
++" width=1 height=16 border=0><span id=portal>Р’С…РѕРґ РІ РїРѕСЂС‚Р°Р»..</span>";
 portal_parm[4]="<img src=\"sawmill.html?actUser-GoToArenaFromHouse="+MyHome+"&room=1024\" "
 +"onError=\"top.frames['d_act'].location='jewelry.html?unick='+d.nk;"
-+"byid('portal').innerHTML='Портал в Огранку';\""
-+" width=1 height=16 border=0><span id=portal>Вход в портал..</span>";
++"byid('portal').innerHTML='РџРѕСЂС‚Р°Р» РІ РћРіСЂР°РЅРєСѓ';\""
++" width=1 height=16 border=0><span id=portal>Р’С…РѕРґ РІ РїРѕСЂС‚Р°Р»..</span>";
 portal_parm[5]="<img src=\"sawmill.html?actUser-GoToArenaFromHouse="+MyHome+"&room=1024\" "
 +"onError=\"top.frames['d_act'].location='privsmith.html?unick='+d.nk;"
-+"byid('portal').innerHTML='Портал в Кузнецу';\""
-+" width=1 height=16 border=0><span id=portal>Вход в портал..</span>";
++"byid('portal').innerHTML='РџРѕСЂС‚Р°Р» РІ РљСѓР·РЅРµС†Сѓ';\""
++" width=1 height=16 border=0><span id=portal>Р’С…РѕРґ РІ РїРѕСЂС‚Р°Р»..</span>";
 byid("t").innerHTML=""
 +"<a href=\"#\" onclick=\"top.frames['d_act'].location='foresthome_hid_"+MyHome+".html';"
 +"byid('t').innerHTML=portal_parm[0];\" "
-+"style=\"margin-left:35%;\">[Опушка]</a>"
++"style=\"margin-left:35%;\">[РћРїСѓС€РєР°]</a>"
 +"<a href=\"#\" onclick=\"top.frames['d_act'].location='blacksmithhome_hid_"+MyHome+".html';"
-+"byid('t').innerHTML=portal_parm[3];\">[Ювелир]</a>";
++"byid('t').innerHTML=portal_parm[3];\">[Р®РІРµР»РёСЂ]</a>";
 }
 }
 
-function MyTime(a) { // Чат
+function MyTime(a) { // Р§Р°С‚
 if(a==0) {
 var breq=top.frames["d_chat"].document.getElementById("messages").innerHTML;
-var reg=new RegExp("(mytime|Голос)","g");
-var regg=new RegExp("(Длительность Вашей травмы|Читайте новости|присоединение к захвату)","g");
+var reg=new RegExp("(mytime|Р“РѕР»РѕСЃ)","g");
+var regg=new RegExp("(Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ Р’Р°С€РµР№ С‚СЂР°РІРјС‹|Р§РёС‚Р°Р№С‚Рµ РЅРѕРІРѕСЃС‚Рё|РїСЂРёСЃРѕРµРґРёРЅРµРЅРёРµ Рє Р·Р°С…РІР°С‚Сѓ)","g");
 if(regg.test(breq)) {
 top.frames["d_chatact"].chclear();
 top.frames["d_chatact"].chclear();
@@ -225,7 +225,7 @@ return true;
 }}
 if(a==1) {
 var breq=top.frames["d_chat"].document.getElementById("messages").innerHTML;
-var reg=new RegExp("На форпост","g");
+var reg=new RegExp("РќР° С„РѕСЂРїРѕСЃС‚","g");
 if(reg.test(breq)) {
 return true;
 }}
@@ -236,14 +236,14 @@ var chatReg=/row(\d+)/;
 var chatRowArray=chatReg.exec(chat_msg);
 // check-messages
 var breq=top.frames["d_chat"].document.getElementById("row"+chatRowArray[1]).innerHTML;
-var reg=new RegExp("("+ME.nk+"|На форпост)","g");
+var reg=new RegExp("("+ME.nk+"|РќР° С„РѕСЂРїРѕСЃС‚)","g");
 if(reg.test(breq) && !top.frames["d_pers"].chatRowArray[chatRowArray[1]]) {
 document.getElementById("logb").innerHTML=""
 +"<a href=\"#\" onclick=\""
 +"MyTime(4);"
-+"this.innerHTML='Готов';"
++"this.innerHTML='Р“РѕС‚РѕРІ';"
 +"return false;\">"
-+"<b>[Принять чат]</b></a>";
++"<b>[РџСЂРёРЅСЏС‚СЊ С‡Р°С‚]</b></a>";
 return true;
 }}
 return false;
@@ -255,7 +255,7 @@ var chatReg=/row(\d+)/;
 var chatRowArray=chatReg.exec(chat_msg);
 // clear-messages
 var breq=top.frames["d_chat"].document.getElementById("row"+chatRowArray[1]).innerHTML;
-var reg=new RegExp("("+ME.nk+"|На форпост)","g");
+var reg=new RegExp("("+ME.nk+"|РќР° С„РѕСЂРїРѕСЃС‚)","g");
 if(reg.test(breq) && !top.frames["d_pers"].chatRowArray[chatRowArray[1]]) {
 top.frames["d_pers"].chatRowArray[chatRowArray[1]]=1;
 }}
@@ -323,8 +323,8 @@ document.getElementById("status").innerHTML="OpenMagBook:"+cast_load_count;
 return setTimeout("UseMagCast(mb_parm[0],mb_parm[1],mb_parm[2],mb_parm[3],mb_parm[4])",speed_cast);
 } else {return byid("status").innerHTML="CloseMagBook";}
 }
-if(a==0) { // на себя
-if(b==0) { // хп, панцирь
+if(a==0) { // РЅР° СЃРµР±СЏ
+if(b==0) { // С…Рї, РїР°РЅС†РёСЂСЊ
 // FORM-CAST
 var addform=frames["channel_2"].document.createElement("span");
 addform.innerHTML=""
@@ -338,12 +338,12 @@ var chform=frames["channel_2"].document.forms["castform"];
 chform.submit();
 // END-FORM-CAST
 }
-if(b==1) { // проклятие
+if(b==1) { // РїСЂРѕРєР»СЏС‚РёРµ
 frames["channel_2"].location="magbook.html?actBattle-UseCast="+id+"&bid="+BID+"&fl=1&code="+mb_code+"";
 }
 }
-if(a==1) { // на врага
-if(b==0) { // клон
+if(a==1) { // РЅР° РІСЂР°РіР°
+if(b==0) { // РєР»РѕРЅ
 if(f5_mbCast==1) { // F5-wait
 f5_mbCast=0;
 mb_parm=new Array(a,b,id,mb_x,mb_y);
@@ -368,15 +368,15 @@ var chform=frames["channel_2"].document.forms["castform"];
 chform.submit();
 // END-FORM-CAST-CLONE
 }
-if(b==1) { // магудар
+if(b==1) { // РјР°РіСѓРґР°СЂ
 frames["channel_2"].location="magbook_actBattle-UseCast_"+id+".html?bid="+BID+"&uid="+ENEMY+"&code="+mb_code+"";
 }
 }
 if(a==2) {
-if(b==0) { // испепеление, выкинуть
+if(b==0) { // РёСЃРїРµРїРµР»РµРЅРёРµ, РІС‹РєРёРЅСѓС‚СЊ
 frames["channel_2"].location="ability_actBattle-UseCast_"+id+".html?bid="+BID+"&uid="+ENEMY+"&code="+mb_code+"";
 }
-if(b==1) { // пит
+if(b==1) { // РїРёС‚
 frames["channel_2"].location="ability.html?actBattle-UseCast="+id+"&bid="+BID+"&pettarget=1&tactic=3&code="+mb_code+"";
 }
 }
@@ -415,7 +415,7 @@ MyY=EY;
 // move-click
 if(yes_mbCast==0) move_round++;
 if(move_round>0 && UNBS[ME.id] && UNBS[ME.id].flg!=8 &&
-   top.frames["d_pers"].document.CrDemand.abMoveСlick.value==1) {
+   top.frames["d_pers"].document.CrDemand.abMoveРЎlick.value==1) {
 byid("status").style.backgroundColor="yellow";
 byid("status").innerHTML="move";
 PrepareReq("bid="+BID+"&x="+EX+"&y="+EY+"&actBattle-Move=1");
@@ -482,7 +482,7 @@ element.parentNode.insertBefore(text, element);
 // end-msg-log
 }
 var control_text=""
-+"<span style=background-color:yellow;color:black;>СОЗДАТЬ_ЗАЯВКУ</span>"
++"<span style=background-color:yellow;color:black;>РЎРћР—Р”РђРўР¬_Р—РђРЇР’РљРЈ</span>"
 +"<form name=cd action="+game+" method=post>"
 +"<input type=hidden name=Battle{fist} value=0>"
 +"<input type=hidden name=Battle{blood} value=1>"
@@ -498,7 +498,7 @@ var control_text=""
 +"<input type=hidden name=actBattle-CreateHeader value=1>"
 +"</form><br>";
 document.getElementById("t").innerHTML=""
-+"<span style=background-color:yellow;color:black;>СОЗДАТЬ_ЗАЯВКУ</span>";
++"<span style=background-color:yellow;color:black;>РЎРћР—Р”РђРўР¬_Р—РђРЇР’РљРЈ</span>";
 top.frames["d_act"].document.getElementById("control_msg").innerHTML=control_text;
 var chform=top.frames["d_act"].document.forms["cd"];
 chform.submit();
@@ -649,7 +649,7 @@ document.getElementById("melt").innerHTML=""
 +"this.value=0;this.style.borderColor='black';};\" "
 +"style=\"width:48px;height:22px;background:url(https://apeha.ru/img/smode-3.gif) no-repeat;"
 +"border:1px solid black;color:#0000FF;padding-left:24px;cursor:help\" "
-+"id=\"act_castle\" title=\"Из Замка в бой\">"
++"id=\"act_castle\" title=\"РР· Р—Р°РјРєР° РІ Р±РѕР№\">"
 +"</td>"
 +"<td>"
 +"<span style=\"display:block;width:24;height:22;"
@@ -694,14 +694,14 @@ document.getElementById("melt").innerHTML=""
 +"style=\"margin-top:4px;margin-left:4px;width:18px;height:15px;font-size:8pt;"
 +"background-color:#D4D0C8;border:1px solid black;position:absolute;\">"
 +"<div style=\"width:48px;height:22px;"
-+"background:url(https://"+hostname_oil+"/img/arrow/fight.gif) no-repeat;\" title=\"Лимит раундов\">"
++"background:url(https://"+hostname_oil+"/img/arrow/fight.gif) no-repeat;\" title=\"Р›РёРјРёС‚ СЂР°СѓРЅРґРѕРІ\">"
 +"</div>"
 +"</td>"
 +"<td>"
 +"<div onclick=\"document.CrDemand.clonsum.click();\" "
 +"style=\"margin-top:2px;margin-left:0px;width:15px;height:12px;"
 +"background:url(https://"+hostname_oil+"/img/arrow/ico_unis.png) no-repeat;"
-+"border-width:0px 0px 0px 0px;position:absolute;\" title=\"Лимит врагов\"></div>"
++"border-width:0px 0px 0px 0px;position:absolute;\" title=\"Р›РёРјРёС‚ РІСЂР°РіРѕРІ\"></div>"
 +"<div onclick=\"document.CrDemand.abHP.click();\" "
 +"oncontextmenu=\"byid('t').innerHTML=element_limit_hp;"
 +"if(ab_limit_hp==2){byid('limitHP50').style.color='red';}"
@@ -709,7 +709,7 @@ document.getElementById("melt").innerHTML=""
 +"return false;\" "
 +"style=\"margin-top:2px;margin-left:18px;width:15px;height:12px;"
 +"background:url(https://"+hostname_oil+"/img/arrow/ico_lifeup.png) no-repeat;"
-+"border-width:0px 0px 0px 0px;position:absolute;\" title=\"Лимит HP\"></div>"
++"border-width:0px 0px 0px 0px;position:absolute;\" title=\"Р›РёРјРёС‚ HP\"></div>"
 +"<input name=\"clonsum\" type=\"button\" value=1 onclick=\""
 +"if(this.value==0){"
 +"this.value=1;"
@@ -720,7 +720,7 @@ document.getElementById("melt").innerHTML=""
 +"this.style.color='#D4D0C8';"
 +"this.style.backgroundColor='#D4D0C8';};\" "
 +"style=\"padding:0px;width:15px;height:22px;"
-+"color:gold;background-color:gold;border:1px solid black;\" title=\"Лимит врагов\">"
++"color:gold;background-color:gold;border:1px solid black;\" title=\"Р›РёРјРёС‚ РІСЂР°РіРѕРІ\">"
 +"<input name=\"abHP\" type=\"button\" value=0 onclick=\""
 +"if(this.value==0){"
 +"this.value=1;"
@@ -735,14 +735,14 @@ document.getElementById("melt").innerHTML=""
 +"if(ab_limit_hp==4){byid('limitHP25').style.color='red';}"
 +"return false;\" "
 +"style=\"margin-left:2px;padding:0px;width:15px;height:22px;"
-+"color:#D4D0C8;background-color:#D4D0C8;border:1px solid black;\" title=\"Лимит HP\">"
++"color:#D4D0C8;background-color:#D4D0C8;border:1px solid black;\" title=\"Р›РёРјРёС‚ HP\">"
 +"</td>"
 +"<td>"
-+"<div onclick=\"document.CrDemand.abMoveСlick.click();\" "
++"<div onclick=\"document.CrDemand.abMoveРЎlick.click();\" "
 +"style=\"margin-top:1px;margin-left:1px;width:12px;height:13px;"
 +"background:url(https://"+hostname_oil+"/img/arrow/ico_move_to.png) no-repeat;"
-+"border-width:0px 0px 0px 0px;position:absolute;\" title=\"Ходить в один клик\"></div>"
-+"<input name=\"abMoveСlick\" type=\"button\" value=0 onclick=\""
++"border-width:0px 0px 0px 0px;position:absolute;\" title=\"РҐРѕРґРёС‚СЊ РІ РѕРґРёРЅ РєР»РёРє\"></div>"
++"<input name=\"abMoveРЎlick\" type=\"button\" value=0 onclick=\""
 +"if(this.value==0){"
 +"this.value=1;"
 +"this.style.color='gold';"
@@ -752,7 +752,7 @@ document.getElementById("melt").innerHTML=""
 +"this.style.color='#D4D0C8';"
 +"this.style.backgroundColor='#D4D0C8';};\" "
 +"style=\"margin-left:0px;padding:0px;width:14px;height:22px;"
-+"color:#D4D0C8;background-color:#D4D0C8;border:1px solid black;\" title=\"Ходить в один клик\">"
++"color:#D4D0C8;background-color:#D4D0C8;border:1px solid black;\" title=\"РҐРѕРґРёС‚СЊ РІ РѕРґРёРЅ РєР»РёРє\">"
 +"</td>"
 +"<td>&nbsp;</td>"
 +"</tr>"
@@ -796,7 +796,7 @@ return true;
 function sl_Data() {
 if(frames["channel_2"].document.getElementsByTagName("a")[0]) {
 for(var i=0; i<frames["channel_2"].document.body.getElementsByTagName("a").length; i++) {
-if(frames["channel_2"].document.body.getElementsByTagName("a")[i].title=="Приват") {
+if(frames["channel_2"].document.body.getElementsByTagName("a")[i].title=="РџСЂРёРІР°С‚") {
 frames["channel_2"].document.body.getElementsByTagName("a")[i].title=0;
 var sl_str=""+frames["channel_2"].document.body.getElementsByTagName("a")[i].onclick;
 var sl_reg=/setPrivate\((\d+),"(.+)"\)/;
@@ -884,24 +884,24 @@ if(!EnemyFind(1,UNBS[ENEMY].nk)) {cn0=0;break;} //fail
 console.log('K0','=',EFOBJ[0].nxy,EFOBJ[0].rnd,EFOBJ[0].id);
 byid("status").innerHTML="K";
 byid("status").style.backgroundColor="yellow";
-byid("logc").innerHTML="&#936; <b>УДАР</b>";
+byid("logc").innerHTML="&#936; <b>РЈР”РђР </b>";
 var rnd=Math.round(Math.random()*2);
 if(!HandAttention()) {
 if(ME.id==202238365) rnd=3;
 }
-switch(rnd) { // удар-блок
+switch(rnd) { // СѓРґР°СЂ-Р±Р»РѕРє
 case 0: SwitchAttack(1);ubkick(0,0);ubblock(1,2);ubblock(1,3);MakeTurn();
 byid("status").innerHTML="K0";
-break; // голова
+break; // РіРѕР»РѕРІР°
 case 1: SwitchAttack(1);ubkick(0,1);ubblock(1,2);ubblock(1,3);MakeTurn();
 byid("status").innerHTML="K1";
-break; // корпус
+break; // РєРѕСЂРїСѓСЃ
 case 2: SwitchAttack(1);ubkick(0,4);ubblock(1,2);ubblock(1,3);MakeTurn();
 byid("status").innerHTML="K2";
-break; // ноги
+break; // РЅРѕРіРё
 case 3: SwitchAttack(1);ubkick(0,0);ubkick(1,0);MakeTurn();
 byid("status").innerHTML="K3";
-break; // голова-голова
+break; // РіРѕР»РѕРІР°-РіРѕР»РѕРІР°
 }
 }} // end-loop
 console.log('K1','=',EFOBJ[0].nxy,EFOBJ[0].rnd,ENEMY);
@@ -940,11 +940,11 @@ if(a==2) { // BLOCK
 if(cn0==0 && ab_move==0) {
 byid("status").innerHTML="B";
 byid("status").style.backgroundColor="yellow";
-byid("logc").innerHTML="&#936; <b>БЛОК</b>";
+byid("logc").innerHTML="&#936; <b>Р‘Р›РћРљ</b>";
 if(ME.id==203168448 || ME.id==200411306) { //block-style
-SwitchAttack(1);ubblock(0,1);ubblock(1,2);ubblock(0,3);ubblock(1,4);MakeTurn(); //голова
+SwitchAttack(1);ubblock(0,1);ubblock(1,2);ubblock(0,3);ubblock(1,4);MakeTurn(); //РіРѕР»РѕРІР°
 } else {
-SwitchAttack(1);ubblock(0,0);ubblock(1,1);ubblock(0,2);ubblock(1,3);MakeTurn(); //ноги
+SwitchAttack(1);ubblock(0,0);ubblock(1,1);ubblock(0,2);ubblock(1,3);MakeTurn(); //РЅРѕРіРё
 } //end-block-style
 }
 ab_hide=0;
@@ -957,10 +957,10 @@ tmID[0]=setTimeout("autobat(1)",speed_autobat);
 function HandAttention() {
 var ha_r=top.frames["d_pers"].byid("INJ_r").title;
 var ha_l=top.frames["d_pers"].byid("INJ_l").title;
-if(ha_r=="Часть тела легко повреждена") return true;
-if(ha_l=="Часть тела легко повреждена") return true;
-if(ha_r=="Часть тела тяжело повреждена") return true;
-if(ha_l=="Часть тела тяжело повреждена") return true;
+if(ha_r=="Р§Р°СЃС‚СЊ С‚РµР»Р° Р»РµРіРєРѕ РїРѕРІСЂРµР¶РґРµРЅР°") return true;
+if(ha_l=="Р§Р°СЃС‚СЊ С‚РµР»Р° Р»РµРіРєРѕ РїРѕРІСЂРµР¶РґРµРЅР°") return true;
+if(ha_r=="Р§Р°СЃС‚СЊ С‚РµР»Р° С‚СЏР¶РµР»Рѕ РїРѕРІСЂРµР¶РґРµРЅР°") return true;
+if(ha_l=="Р§Р°СЃС‚СЊ С‚РµР»Р° С‚СЏР¶РµР»Рѕ РїРѕРІСЂРµР¶РґРµРЅР°") return true;
 return false;
 }
 
@@ -1059,7 +1059,7 @@ EFOBJ[1].x=MyX;
 EFOBJ[1].y=MyY;
 byid("status").innerHTML=b;
 byid("status").style.backgroundColor="yellow";
-byid("logc").innerHTML="&#936; <b>Иду на врага!</b>";
+byid("logc").innerHTML="&#936; <b>РРґСѓ РЅР° РІСЂР°РіР°!</b>";
 PrepareReq("bid="+BID+"&x="+MyX+"&y="+MyY+"&actBattle-Move=1");
 tmID[0]=setTimeout("autobat(2)",500);
 }
@@ -1128,7 +1128,7 @@ if(a==1) { // fail-list
 var list_white=0;
 var list_black=0;
 var cut_nk=b;
-cut_nk=cut_nk.replace(/клон (\d+)/gi, "");
+cut_nk=cut_nk.replace(/РєР»РѕРЅ (\d+)/gi, "");
 cut_nk=cut_nk.replace(/(\s)/gi, "");
 for(s in soclanList) { // loop0
 if(soclanList[s].nk==cut_nk) {
@@ -1219,7 +1219,7 @@ div.innerHTML=""
 +"byid('status').innerHTML=this.value;"
 +"this.value='OFF';"
 +"}\" id=\"ctrl_btn\">"
-+"<sapn id=\"logb\">&#153;Слабоумие и отвага</span>";
++"<sapn id=\"logb\">&#153;РЎР»Р°Р±РѕСѓРјРёРµ Рё РѕС‚РІР°РіР°</span>";
 div.innerHTML+="&nbsp;";
 div.innerHTML+="<sapn id=\"logc\"></span>";
 div.innerHTML+="<sapn id=\"audio\"></span>";
@@ -1237,10 +1237,10 @@ if(FLDY>3 && FLDX+FLDY!=27 && amountenemy>2 &&
 ChangeAstralLevel(0);
 } // end-astral-up
 if(amountenemy==1) { // limit
-byid("logb").innerHTML="<span style=\"color:red;\">&#9674;Лимит врагов</span>";
+byid("logb").innerHTML="<span style=\"color:red;\">&#9674;Р›РёРјРёС‚ РІСЂР°РіРѕРІ</span>";
 if(top.frames["d_pers"].document.CrDemand.act_castle.value==1 && amountfriend==1) {
 top.frames["d_pers"].document.CrDemand.act_castle.click();
-top.frames["d_pers"].document.getElementById("t").innerHTML="НЕТ ИГРОКОВ. СТОП.";
+top.frames["d_pers"].document.getElementById("t").innerHTML="РќР•Рў РР“Р РћРљРћР’. РЎРўРћРџ.";
 }
 return abAudio("call_message.mp3");
 } // end-limit
@@ -1271,7 +1271,7 @@ if(top.frames["d_pers"].document.CrDemand.clonsum.value==1 &&
    amountenemy<startAmountEnemy/2 && amountEnemyClon<2) { // limit
 byid("logb").innerHTML=""
 +"<span style=\"color:red;\">"
-+"&#9674;Лимит врагов"
++"&#9674;Р›РёРјРёС‚ РІСЂР°РіРѕРІ"
 +"</span>";
 abAudio("call_message.mp3");
 return document.getElementById("ctrl_btn").value="ON";
@@ -1279,7 +1279,7 @@ return document.getElementById("ctrl_btn").value="ON";
 if(logLastRoundID>=top.frames["d_pers"].document.CrDemand.abround.value) { // limit-raund
 byid("logb").innerHTML=""
 +"<span style=\"color:red;\">"
-+"&#215;Лимит "+top.frames["d_pers"].document.CrDemand.abround.value+" раунд"
++"&#215;Р›РёРјРёС‚ "+top.frames["d_pers"].document.CrDemand.abround.value+" СЂР°СѓРЅРґ"
 +"</span>";
 abAudio("call_message.mp3");
 return document.getElementById("ctrl_btn").value="ON";
@@ -1306,7 +1306,7 @@ if(tl_sec<55 && canmove1=="visible" && UNBS[ME.id].hp<ME.mhp/ab_limit_hp && yes_
 if(top.frames["d_pers"].document.CrDemand.abHP.value==1) {
 byid("logb").innerHTML=""
 +"<span style=\"color:red;\">"
-+"&#215;Лимит HP"
++"&#215;Р›РёРјРёС‚ HP"
 +"</span>";
 byid("status").innerHTML="HP";
 abAudio("boom.mp3");
@@ -1314,7 +1314,7 @@ return document.getElementById("ctrl_btn").value="ON";
 } else {
 byid("status").innerHTML="HP";
 byid("status").style.backgroundColor="red";
-document.getElementById("logb").innerHTML="<b>Восстановить HP</b>";
+document.getElementById("logb").innerHTML="<b>Р’РѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ HP</b>";
 abAudio("call_in.mp3");
 UseMagCast(0,0,mbHP);
 cn0=0; cn1=0;
@@ -1325,8 +1325,8 @@ if(tl_sec>14 && amountfriend>1 && amountenemy>1 && amountEnemyTN==0 && !EnemyFin
 byid("status").innerHTML="AT1";
 byid("status").style.backgroundColor="yellowgreen";
 document.getElementById("logb").innerHTML="&#9674;"
-+"Враг:<b>"+amountenemy+"</b>,Союз:"+amountfriend;
-byid("logc").innerHTML="&#937; Ж&#916;УН";
++"Р’СЂР°Рі:<b>"+amountenemy+"</b>,РЎРѕСЋР·:"+amountfriend;
+byid("logc").innerHTML="&#937; Р–&#916;РЈРќ";
 actReload();
 return tmID[0]=setTimeout("autotest()",5000);
 }
@@ -1335,8 +1335,8 @@ if(tl_sec>21 && EnemyFind(0) && amountFriendTN<amountfriend/2 &&
 byid("status").innerHTML="AT2";
 byid("status").style.backgroundColor="yellowgreen";
 document.getElementById("logb").innerHTML="&#9674;"
-+"Враг:<b>"+amountenemy+"</b>,Союз:"+amountfriend;
-byid("logc").innerHTML="&#937; Ж&#916;УН";
++"Р’СЂР°Рі:<b>"+amountenemy+"</b>,РЎРѕСЋР·:"+amountfriend;
+byid("logc").innerHTML="&#937; Р–&#916;РЈРќ";
 actReload();
 return tmID[0]=setTimeout("autotest()",3000);
 }
@@ -1466,10 +1466,10 @@ if(at_stock) at_cast=false;
 if(at_cast) { //cast
 UseMagCast(1,0,mbClon,MyX,MyY);
 byid("logb").innerHTML=(EFOBJ[0].clr?"&#8226;":"&#164;")
-+"Цель:"+EFOBJ[0].x+","+EFOBJ[0].y+" <u>Клон</u>:<b>"+MyX+","+MyY+"</b>";
++"Р¦РµР»СЊ:"+EFOBJ[0].x+","+EFOBJ[0].y+" <u>РљР»РѕРЅ</u>:<b>"+MyX+","+MyY+"</b>";
 } else {
 yes_mbCast=0;
-byid("logb").innerHTML="&#9674;Лимит целей";
+byid("logb").innerHTML="&#9674;Р›РёРјРёС‚ С†РµР»РµР№";
 } //end-cast
 } else { // end-clon
 byid("status").innerHTML=begin_round+"|<b>"+logLastRoundID+"</b>";
@@ -1479,7 +1479,7 @@ if(tl_sec>8 || tl_min>0) { // STOCK
 if(cn0==0 && cn1<=rxy && !at_stock) { // stock0
 cn1++;
 byid("status").innerHTML="CN"+cn1;
-byid("logb").innerHTML="&#9674;Поиск цели..";
+byid("logb").innerHTML="&#9674;РџРѕРёСЃРє С†РµР»Рё..";
 return tmID[0]=setTimeout("autotest()",500);
 } // end-stock0
 if(!at_stock && yes_mbCast) cn1=0;
@@ -1487,14 +1487,14 @@ at_stock=1;
 if(cn0==0 && cn1<=rxy && yes_mbCast) { // stock1
 cn1++;
 byid("status").innerHTML="CN"+cn1;
-byid("logb").innerHTML="&#9674;Поиск цели..";
+byid("logb").innerHTML="&#9674;РџРѕРёСЃРє С†РµР»Рё..";
 return tmID[0]=setTimeout("autotest()",500);
 } // end-stock1
 } // END-STOCK
 cn0=0;
 cn1=0;
 byid("logc").innerHTML=""
-+"&#937; Ж&#916;УН <b>"+amountEnemyTN+"/"+(amountenemy/2)+"</b>";
++"&#937; Р–&#916;РЈРќ <b>"+amountEnemyTN+"/"+(amountenemy/2)+"</b>";
 if(canmove1=="visible" && amountEnemyTN>=amountenemy/2 ||
    canmove1=="visible" && tl_sec<=21 ||
    canmove1=="visible" && EnemyFind(0)) {
@@ -1502,7 +1502,7 @@ var speed_autobat=(tl_sec<8)?1500:5555;
 if(EnemyFind(0)) speed_autobat=3000;
 if(!EnemyFind(0)) speed_autobat=tl_sec/2*1000;
 if(amountEnemyTN>=amountenemy/2 && tl_sec>5) speed_autobat=2000;
-byid("logc").innerHTML="&#937; <b>Переход "+(speed_autobat/1000)+" сек.</b>";
+byid("logc").innerHTML="&#937; <b>РџРµСЂРµС…РѕРґ "+(speed_autobat/1000)+" СЃРµРє.</b>";
 tmID[1]=setTimeout(""
 +"UseMagCast(777);"
 +"ab_hide=0;"
@@ -1522,13 +1522,13 @@ var obj_hover_3="onmouseover=\"this.style.backgroundColor='skyblue';\" onmouseou
 
 var addscript = function() {
 if(ME.id==100214920 || ME.id==201964813 || ME.id==200411306 || ME.id==201135707) { // bb sv59190 Primere hetzer
-var btn_name_0="МаГудар";
-var btn_name_1="Заморозь";
-var btn_name_2="Прокля";
+var btn_name_0="РњР°Р“СѓРґР°СЂ";
+var btn_name_1="Р—Р°РјРѕСЂРѕР·СЊ";
+var btn_name_2="РџСЂРѕРєР»СЏ";
 var btn_name_3="HP";
-var btn_name_4="Панцирь";
-var btn_name_5="Препа";
-var btn_name_6="Переман";
+var btn_name_4="РџР°РЅС†РёСЂСЊ";
+var btn_name_5="РџСЂРµРїР°";
+var btn_name_6="РџРµСЂРµРјР°РЅ";
 var btn_cast_0="UseMagCast(1,1,mbFireBall);";
 var btn_cast_1="UseMagCast(1,1,mbFreeze);";
 var btn_cast_2="UseMagCast(0,1,mbCurse);";
@@ -1541,13 +1541,13 @@ var btn_cast_6="UseMagCast(1,1,mbPereman);";
 <!-------    BATTLEFIELD BUTTONS RANGER        -------->
 <!----------------------------------------------------->
 if(ME.id==202721325) { // Hopg?
-var btn_name_0="Разрушить";
-var btn_name_1="Точный";
-var btn_name_2="Меткий";
+var btn_name_0="Р Р°Р·СЂСѓС€РёС‚СЊ";
+var btn_name_1="РўРѕС‡РЅС‹Р№";
+var btn_name_2="РњРµС‚РєРёР№";
 var btn_name_3="HP";
-var btn_name_4="Увернуться";
-var btn_name_5="Прыжок";
-var btn_name_6="Переман";
+var btn_name_4="РЈРІРµСЂРЅСѓС‚СЊСЃСЏ";
+var btn_name_5="РџСЂС‹Р¶РѕРє";
+var btn_name_6="РџРµСЂРµРјР°РЅ";
 var btn_cast_0="UseMagCast(1,0,mbDestroy,MyX,MyY);";
 var btn_cast_1="UseMagCast(0,0,mbPower);";
 var btn_cast_2="UseMagCast(0,0,mbSniper);";
@@ -1559,14 +1559,14 @@ var btn_cast_6="UseMagCast(1,1,mbPereman);";
 <!----------------------------------------------------->
 <!-------    BATTLEFIELD BUTTONS WARRIOR       -------->
 <!----------------------------------------------------->
-if(ME.id==203168448) { // Божий одуванчик
-var btn_name_0="Разрушить";
-var btn_name_1="Напугать";
-var btn_name_2="Клич";
+if(ME.id==203168448) { // Р‘РѕР¶РёР№ РѕРґСѓРІР°РЅС‡РёРє
+var btn_name_0="Р Р°Р·СЂСѓС€РёС‚СЊ";
+var btn_name_1="РќР°РїСѓРіР°С‚СЊ";
+var btn_name_2="РљР»РёС‡";
 var btn_name_3="HP";
-var btn_name_4="Вр.защита";
-var btn_name_5="СилаДуха";
-var btn_name_6="Переман";
+var btn_name_4="Р’СЂ.Р·Р°С‰РёС‚Р°";
+var btn_name_5="РЎРёР»Р°Р”СѓС…Р°";
+var btn_name_6="РџРµСЂРµРјР°РЅ";
 var btn_cast_0="UseMagCast(1,0,mbDestroy,MyX,MyY);";
 var btn_cast_1="UseMagCast(1,1,mbFreeze);";
 var btn_cast_2="UseMagCast(0,1,mbCurse);";
@@ -1585,23 +1585,23 @@ document.getElementById("buttons").innerHTML=""
 +"<div style=\"margin-left:1px;margin-top:0px;width:65px;height:15px;font-size:11px;font-weight:bold;text-align:center;"
 +"color:black;background-color:#FFEEC0;border:solid 1px black;padding-top:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"open('/bag.html?xdac='+Math.random(),'BAG','width=850,height=650,scrollbars=1,resizable=1');\" "
-+obj_hover_0+">Рюкзак</div>"
++obj_hover_0+">Р СЋРєР·Р°Рє</div>"
 +"<div style=\"margin-left:71px;margin-top:0px;width:65px;height:15px;font-size:9px;font-weight:bold;text-align:center;"
 +"color:black;background-color:#FFEEC0;border:solid 1px black;padding-top:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"move_round=0;yes_mbCast=1;SwitchAttack(1);\" "
-+obj_hover_0+">Удар/Блок</div>"
++obj_hover_0+">РЈРґР°СЂ/Р‘Р»РѕРє</div>"
 +"<div style=\"margin-left:141px;margin-top:0px;width:65px;height:15px;font-size:11px;font-weight:bold;text-align:center;"
 +"color:black;background-color:#FFEEC0;border:solid 1px black;padding-top:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"open('/mbag.html?xdac='+Math.random(),'MAGIC','width=850,height=650,scrollbars=1,resizable=1');\" "
-+obj_hover_0+">Магия</div>"
++obj_hover_0+">РњР°РіРёСЏ</div>"
 +"<div style=\"margin-left:211px;margin-top:0px;width:65px;height:15px;font-size:11px;font-weight:bold;text-align:center;"
 +"color:black;background-color:#FFEEC0;border:solid 1px black;padding-top:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"move_round=0;yes_mbCast=1;MakeMove();\" "
-+obj_hover_0+">Ходить</div>"
++obj_hover_0+">РҐРѕРґРёС‚СЊ</div>"
 +"<div id=\"astral1\" style=\"margin-left:281px;margin-top:0px;width:65px;height:15px;font-size:11px;font-weight:bold;text-align:center;"
 +"color:mediumpurple;background-color:#FFEEC0;border:solid 1px mediumpurple;padding-top:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"ChangeAstralLevel(0);\" "
-+obj_hover_0+">Астрал 1</div>"
++obj_hover_0+">РђСЃС‚СЂР°Р» 1</div>"
 
 +"<div style=\"margin-left:1px;margin-top:20px;width:80px;height:15px;font-size:12px;text-align:center;"+usoff
 +"color:black;background-color:khaki;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
@@ -1609,21 +1609,21 @@ document.getElementById("buttons").innerHTML=""
 +"oncontextmenu=\"ReloadReq=0;move_round=0;yes_mbCast=1;SwitchAttack(1);"
 +"ubblock(0,4);ubblock(0,2);ubblock(1,3);ubblock(1,1);"
 +"MakeTurn();return false;\" "
-+obj_hover_1+">ГОЛОВА</div>"
++obj_hover_1+">Р“РћР›РћР’Рђ</div>"
 +"<div style=\"margin-left:1px;margin-top:38px;width:25px;height:15px;font-size:12px;text-align:center;"+usoff
 +"color:black;background-color:khaki;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"ReloadReq=0;move_round=0;yes_mbCast=1;SwitchAttack(1);ubkick(0,2);ubkick(1,2);MakeTurn();\" "
 +"oncontextmenu=\"ReloadReq=0;move_round=0;yes_mbCast=1;SwitchAttack(1);"
 +"ubblock(0,4);ubblock(1,3);ubblock(0,1);ubblock(1,0);"
 +"MakeTurn();return false;\" "
-+obj_hover_1+">П</div>"
++obj_hover_1+">Рџ</div>"
 +"<div style=\"margin-left:29px;margin-top:38px;width:26px;height:15px;font-size:12px;text-align:center;"+usoff
 +"color:black;background-color:khaki;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"ReloadReq=0;move_round=0;yes_mbCast=1;SwitchAttack(1);ubkick(0,1);ubkick(1,1);MakeTurn();\" "
 +"oncontextmenu=\"ReloadReq=0;move_round=0;yes_mbCast=1;SwitchAttack(1);"
 +"ubblock(0,4);ubblock(1,3);ubblock(0,2);ubblock(1,0);"
 +"MakeTurn();return false;\" "
-+obj_hover_1+">К</div>"
++obj_hover_1+">Рљ</div>"
 +"<div style=\"margin-left:56px;margin-top:38px;width:25px;height:15px;font-size:12px;text-align:center;"+usoff
 +"color:black;background-color:khaki;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"ReloadReq=0;move_round=0;yes_mbCast=1;SwitchAttack(1);ubkick(0,3);ubkick(1,3);MakeTurn();\" "
@@ -1637,18 +1637,18 @@ document.getElementById("buttons").innerHTML=""
 +"oncontextmenu=\"ReloadReq=0;move_round=0;yes_mbCast=1;SwitchAttack(1);"
 +"ubblock(0,0);ubblock(1,1);ubblock(0,2);ubblock(1,3);"
 +"MakeTurn();return false;\" "
-+obj_hover_1+">НОГИ</div>"
++obj_hover_1+">РќРћР“Р</div>"
 
 +"<div style=\"margin-left:87px;margin-top:20px;width:65px;height:25px;font-size:12px;text-align:center;"
 +"color:black;background-color:yellowgreen;border:solid 1px black;border-style:dashed;"
 +"padding-top:10px;cursor:pointer;position:absolute;\" "
 +"onclick=\"if(yes_mbCast!=0){move_round=0;yes_mbCast=1;"
-+"UseMagCast(1,0,mbClon,MyX,MyY);this.value='Клон';}else{this.value='Нет';}\" "
-+obj_hover_2+">Клон</div>"
++"UseMagCast(1,0,mbClon,MyX,MyY);this.value='РљР»РѕРЅ';}else{this.value='РќРµС‚';}\" "
++obj_hover_2+">РљР»РѕРЅ</div>"
 +"<div style=\"margin-left:87px;margin-top:57px;width:63px;height:14px;font-size:12px;text-align:center;"+usoff
 +"color:black;background-color:#FFEEC0;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"ReloadReq=0;move_round=0;yes_mbCast=1;SwitchAttack(1);ubblock(0,0);ubblock(1,1);ubblock(0,2);ubblock(1,3);MakeTurn();\" "
-+obj_hover_0+">БЛОК.Н</div>"
++obj_hover_0+">Р‘Р›РћРљ.Рќ</div>"
 
 +"<div style=\"margin-left:156px;margin-top:20px;width:65px;height:15px;font-size:11px;text-align:center;"
 +"color:red;background-color:#E8EEEC;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
@@ -1665,9 +1665,9 @@ document.getElementById("buttons").innerHTML=""
 +"<div id=\"MyClon\" style=\"margin-left:364px;margin-top:20px;width:65px;height:15px;font-size:12px;text-align:center;"
 +"color:black;background-color:yellowgreen;border:solid 1px black;border-style:dashed;"
 +"padding:1px;cursor:pointer;position:absolute;\" "
-+"onclick=\"if(yes_mbCast!=0){f5_mbCast=1;move_round=0;yes_mbCast=1;UseMagCast(1,0,mbClon,MyX,MyY);this.innerHTML='F5.Клон';}\" "
-+"oncontextmenu=\"if(yes_mbCast!=0){f5_mbCast=1;move_round=0;yes_mbCast=1;this.innerHTML='F5.Препа';"+btn_cast_5+"}return false;\" "
-+obj_hover_2+">F5.Клон</div>"
++"onclick=\"if(yes_mbCast!=0){f5_mbCast=1;move_round=0;yes_mbCast=1;UseMagCast(1,0,mbClon,MyX,MyY);this.innerHTML='F5.РљР»РѕРЅ';}\" "
++"oncontextmenu=\"if(yes_mbCast!=0){f5_mbCast=1;move_round=0;yes_mbCast=1;this.innerHTML='F5.РџСЂРµРїР°';"+btn_cast_5+"}return false;\" "
++obj_hover_2+">F5.РљР»РѕРЅ</div>"
 +"<div style=\"margin-left:156px;margin-top:38px;width:35px;height:15px;font-size:12px;font-weight:bold;text-align:center;"
 +"color:#BC2EEA;background-color:#E8EEEC;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"if(yes_mbCast!=0){move_round=0;yes_mbCast=1;"+btn_cast_3+"}\" "
@@ -1679,7 +1679,7 @@ document.getElementById("buttons").innerHTML=""
 +"<div style=\"margin-left:277px;margin-top:38px;width:70px;height:15px;font-size:12px;text-align:center;"
 +"color:darkred;background-color:#E8EEEC;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"if(abilityFireDust!=0){UseMagCast(2,0,abilityFireDust);}\" "
-+obj_hover_3+">Пепел</div>"
++obj_hover_3+">РџРµРїРµР»</div>"
 +"<div style=\"margin-left:156px;margin-top:56px;width:68px;height:15px;font-size:11px;font-weight:bold;text-align:center;"
 +"color:black;background-color:#E8EEEC;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"if(yes_mbCast!=0){move_round=0;yes_mbCast=1;"+btn_cast_5+"}\" "
@@ -1695,23 +1695,23 @@ document.getElementById("buttons").innerHTML=""
 +"<div style=\"margin-left:87px;margin-top:77px;width:63px;height:25px;font-size:10px;text-align:center;"+usoff
 +"color:black;background-color:#FFEEC0;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"ReloadReq=0;SwitchAttack(1);ubkick(0,0);ubkick(1,4);ubblock(0,4);ubblock(1,2);ubblock(0,1);ubblock(1,0);MakeTurn();\" "
-+obj_hover_0+">КОМБО У2,Б4</div>"
++obj_hover_0+">РљРћРњР‘Рћ РЈ2,Р‘4</div>"
 +"<div style=\"margin-left:156px;margin-top:77px;width:55px;height:25px;font-size:10px;text-align:center;"
 +"color:darkred;background-color:#E8EEEC;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"if(abilityAbort!=0){UseMagCast(2,0,abilityAbort);}\" "
-+obj_hover_3+">Выкинуть из боя</div>"
++obj_hover_3+">Р’С‹РєРёРЅСѓС‚СЊ РёР· Р±РѕСЏ</div>"
 +"<div style=\"margin-left:214px;margin-top:77px;width:55px;height:25px;font-size:10px;text-align:center;"
 +"color:darkred;background-color:#E8EEEC;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"if(abilityKill!=0){UseMagCast(2,0,abilityKill);}\" "
-+obj_hover_3+">Убить взглядом</div>"
++obj_hover_3+">РЈР±РёС‚СЊ РІР·РіР»СЏРґРѕРј</div>"
 +"<div style=\"margin-left:272px;margin-top:77px;width:55px;height:25px;font-size:10px;text-align:center;"
 +"color:darkred;background-color:#E8EEEC;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"if(abilityCloneDispel!=0){UseMagCast(2,0,abilityCloneDispel);}\" "
-+obj_hover_3+">Развеять клона</div>"
++obj_hover_3+">Р Р°Р·РІРµСЏС‚СЊ РєР»РѕРЅР°</div>"
 +"<div style=\"margin-left:332px;margin-top:77px;width:60px;height:25px;font-size:10px;text-align:center;"
 +"color:black;background-color:#FFEEC0;border:solid 1px black;padding:1px;cursor:pointer;position:absolute;\" "
 +"onclick=\"if(abilityPet!=0){UseMagCast(2,1,abilityPet);this.style.display='none';}\" "
-+obj_hover_0+">Призвать животное</div>"
++obj_hover_0+">РџСЂРёР·РІР°С‚СЊ Р¶РёРІРѕС‚РЅРѕРµ</div>"
 +"</div>";
 };
 <!----------------------------------------------------->
@@ -1720,7 +1720,7 @@ document.getElementById("buttons").innerHTML=""
 var link=new Array();
 link[0]="Test|javascript:void(0);|to Click";
 link[1]="Test|javascript:void(0);|&nbsp;";
-link[2]="Test|javascript:void(0);|Легион Чести";
+link[2]="Test|javascript:void(0);|Р›РµРіРёРѕРЅ Р§РµСЃС‚Рё";
 N=(document.all)?0:1;
 var ob;
 var over=false;
@@ -1797,22 +1797,22 @@ if(d.id==202721325) { // Hopg?
 MyHome=697;
 mbHP=14535;
 user_home="<a href=\"#\" onclick=\"top.frames['d_act'].location='homeenter_hid_"+MyHome+".html';\" "
-+"style=\"font-size:8pt;margin-left:45%;\">[Дом]</a>"
++"style=\"font-size:8pt;margin-left:45%;\">[Р”РѕРј]</a>"
 +"<a href=\"#\" onclick=\""
 +"top.frames['d_act'].location='hstoreroom_sumka_1_hid_"+MyHome+".html';"
-+"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[Сундук]</a>";
++"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[РЎСѓРЅРґСѓРє]</a>";
 }
 if(d.id==201964813) { // sv59190 
 MyClan=12;
 MyHome=970;
 mbHP=680391;
 user_home="<a href=\"#\" onclick=\"top.frames['d_act'].location='homeenter_hid_"+MyHome+".html';\" "
-+"style=\"font-size:8pt;margin-left:45%;\">[Дом]</a>"
++"style=\"font-size:8pt;margin-left:45%;\">[Р”РѕРј]</a>"
 +"<a href=\"#\" onclick=\""
 +"top.frames['d_act'].location='hstoreroom_sumka_1_hid_"+MyHome+".html';"
-+"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[Сундук]</a>";
++"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[РЎСѓРЅРґСѓРє]</a>";
 }
-if(d.id==203168448) { // Божий одуванчик
+if(d.id==203168448) { // Р‘РѕР¶РёР№ РѕРґСѓРІР°РЅС‡РёРє
 MyClan=146;
 mbHP=5018190;
 }
@@ -1821,20 +1821,20 @@ MyHome=7;
 MyClan=196;
 mbHP=24662;
 user_home="<a href=\"#\" onclick=\"top.frames['d_act'].location='homeenter_hid_"+MyHome+".html';\" "
-+"style=\"font-size:8pt;margin-left:45%;\">[Дом]</a>"
++"style=\"font-size:8pt;margin-left:45%;\">[Р”РѕРј]</a>"
 +"<a href=\"#\" onclick=\""
 +"top.frames['d_act'].location='hstoreroom_sumka_1_hid_"+MyHome+".html';"
-+"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[Сундук]</a>";
++"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[РЎСѓРЅРґСѓРє]</a>";
 }
 if(d.id==201135707) { // hetzer
 MyHome=997;
 MyClan=146;
 mbHP=464505;
 user_home="<a href=\"#\" onclick=\"top.frames['d_act'].location='homeenter_hid_"+MyHome+".html';\" "
-+"style=\"font-size:8pt;margin-left:45%;\">[Дом]</a>"
++"style=\"font-size:8pt;margin-left:45%;\">[Р”РѕРј]</a>"
 +"<a href=\"#\" onclick=\""
 +"top.frames['d_act'].location='hstoreroom_sumka_1_hid_"+MyHome+".html';"
-+"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[Сундук]</a>";
++"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[РЎСѓРЅРґСѓРє]</a>";
 }
 var ddmbox="<form name=CrDemand style=\"padding-right:0px;padding-left:0px;padding-bottom:0px;margin:0px;padding-top:0px\">"
 +"<div onmouseover=\"pname='panel';over=true;\" onmouseout=\"over=false;\" "
@@ -1847,22 +1847,22 @@ var ddmbox="<form name=CrDemand style=\"padding-right:0px;padding-left:0px;paddi
 +"<table border=0 width=100%>"
 +"<tr>"
 +"<td>"
-+NewButton(0,"50px","#8A492F","#8A492F","#FFEEC0","gold","Ко&#9827;есо",""
++NewButton(0,"50px","#8A492F","#8A492F","#FFEEC0","gold","РљРѕ&#9827;РµСЃРѕ",""
 +"top.frames['d_act'].location='fortunawheeldata_actUser-SpinWheel_1.html';","","")
-+NewButton(0,"55px","#8A492F","#8A492F","#FFEEC0","gold","«Сумка»","ItemOperationCity(0);","","")
++NewButton(0,"55px","#8A492F","#8A492F","#FFEEC0","gold","В«РЎСѓРјРєР°В»","ItemOperationCity(0);","","")
 +(d.id==9215?
 "<a href=\"javascript:void(0);\" onclick=\"top.frames['d_act'].location='castle_room_1_cid_'+MyClan+'.html';\" "
 +"oncontextmenu=\"top.frames['d_act'].location='medroom_cid_'+MyClan+'.html';return false;\">"
 +"<div onmouseover=\"info(0,this,'gold')\" onmouseout=\"endi(this,'#FFEEC0')\" "
 +"style=\"margin-right:4px;width:60px;border:1px solid blue;background-color:#FFEEC0;color:blue;"
-+"font-size:12px;font-family:Arial;text-align:center;float:left;cursor:hand;\">&#9824;&nbsp;К&nbsp;замку&#9824;</div></a>"
++"font-size:12px;font-family:Arial;text-align:center;float:left;cursor:hand;\">&#9824;&nbsp;Рљ&nbsp;Р·Р°РјРєСѓ&#9824;</div></a>"
 :
 "<a href=\"javascript:void(0);\" onclick=\"top.frames['d_act'].location='castle_room_1_cid_'+MyClan+'.html';\" "
 +"oncontextmenu=\"top.frames['d_act'].location='medroom_cid_'+MyClan+'.html';return false;\">"
 +"<div onmouseover=\"info(0,this,'gold')\" onmouseout=\"endi(this,'#FFEEC0')\" "
 +"style=\"margin-right:4px;width:60px;border:1px solid green;background-color:#FFEEC0;color:green;"
-+"font-size:12px;font-family:Arial;text-align:center;float:left;cursor:hand;\">&#9824;&nbsp;К&nbsp;замку&#9824;</div></a>")
-+NewButton(0,"60px","#8A492F","#8A492F","#FFEEC0","gold","«Бойня»",""
++"font-size:12px;font-family:Arial;text-align:center;float:left;cursor:hand;\">&#9824;&nbsp;Рљ&nbsp;Р·Р°РјРєСѓ&#9824;</div></a>")
++NewButton(0,"60px","#8A492F","#8A492F","#FFEEC0","gold","В«Р‘РѕР№РЅСЏВ»",""
 +"top.frames['d_act'].location='arena_room_1_bmode_3.html';","","")
 +"</td>"
 +"</tr>"
@@ -1873,10 +1873,10 @@ var ddmbox="<form name=CrDemand style=\"padding-right:0px;padding-left:0px;paddi
 +"ItemOperationCity(2);return false;\">"
 +"<div onmouseover=\"info(0,this,'gold')\" onmouseout=\"endi(this,'#FFEEC0')\" "
 +"style=\"margin-right:4px;width:65px;border:1px solid #8A492F;background-color:#FFEEC0;color:#8A492F;"
-+"font-size:12px;font-family:Arial;text-align:center;float:left;cursor:hand;\">Кузница&#189;</div></a>"
-+NewButton(0,"55px","#8A492F","#8A492F","#FFEEC0","gold","«Лавка»","top.frames['d_act'].location='shop.html';","","")
-+NewButton(0,"55px","#8A492F","#8A492F","#FFEEC0","gold","«Рынок»","top.frames['d_act'].location='market.html';","","")
-+NewButton(0,"50px","#8A492F","#8A492F","#FFEEC0","gold","«К&nbsp;магу»",""
++"font-size:12px;font-family:Arial;text-align:center;float:left;cursor:hand;\">РљСѓР·РЅРёС†Р°&#189;</div></a>"
++NewButton(0,"55px","#8A492F","#8A492F","#FFEEC0","gold","В«Р›Р°РІРєР°В»","top.frames['d_act'].location='shop.html';","","")
++NewButton(0,"55px","#8A492F","#8A492F","#FFEEC0","gold","В«Р С‹РЅРѕРєВ»","top.frames['d_act'].location='market.html';","","")
++NewButton(0,"50px","#8A492F","#8A492F","#FFEEC0","gold","В«Рљ&nbsp;РјР°РіСѓВ»",""
 +"top.frames['d_act'].location='magiccasters.html?unick='+d.nk+'';","","")
 +"</td>"
 +"</tr>"
@@ -1887,8 +1887,8 @@ var ddmbox="<form name=CrDemand style=\"padding-right:0px;padding-left:0px;paddi
 +"<div onmouseover=\"info(0,this,'gold')\" onmouseout=\"endi(this,'#FFEEC0')\" "
 +"style=\"margin-right:4px;width:65px;color:#8A492F;background-color:#FFEEC0;border:1px solid #8A492F;"
 +"font-size:12px;font-family:Arial;text-align:center;"
-+"float:left;cursor:hand;\">Банк&#189;</div></a>"
-+NewButton(0,"55px","#8A492F","#8A492F","#FFEEC0","gold","«Турнир»","top.frames['d_act'].location='arenat.html';","","")
++"float:left;cursor:hand;\">Р‘Р°РЅРє&#189;</div></a>"
++NewButton(0,"55px","#8A492F","#8A492F","#FFEEC0","gold","В«РўСѓСЂРЅРёСЂВ»","top.frames['d_act'].location='arenat.html';","","")
 +"<a href=\"javascript:void(0);\" onclick=\""
 +"top.frames['d_act'].location='sawmill_mode_3.html';\" "
 +"oncontextmenu=\""
@@ -1896,23 +1896,23 @@ var ddmbox="<form name=CrDemand style=\"padding-right:0px;padding-left:0px;paddi
 +"<div onmouseover=\"info(0,this,'gold')\" onmouseout=\"endi(this,'#FFEEC0')\" "
 +"style=\"margin-right:4px;width:65px;font-size:12px;font-family:Arial;"
 +"color:#8A492F;background-color:#FFEEC0;border:1px solid #8A492F;"
-+"text-align:center;float:left;cursor:hand;\">Опушка&nbsp;&#189;</div></a>"
++"text-align:center;float:left;cursor:hand;\">РћРїСѓС€РєР°&nbsp;&#189;</div></a>"
 +NewButton(0,"39px","#8A492F","#8A492F","#FFEEC0","gold",">>","ShowDsc();","","tdscbtn")
 +"</td>"
 +"</tr>"
 +"<tr style=\"display:none\" id=\"tdsc\">"
 +"<td>"
 +"<select size=1 name=map style=width:70px>"
-+"<option selected value=0>станд.</option>"
-+"<option value=1>Аванпост</option>"
-+"<option value=2>Катакомбы</option>"
-+"<option value=3>Засада</option>"
-+"<option value=4>Лабиринт</option>"
-+"<option value=5>Крепость</option>"
-+"<option value=6>На заставу</option>"
-+"<option value=7>Переправа</option>"
-+"<option value=8>Вход в подземелье</option>"
-+"<option value=9>БЛИЦ</option>"
++"<option selected value=0>СЃС‚Р°РЅРґ.</option>"
++"<option value=1>РђРІР°РЅРїРѕСЃС‚</option>"
++"<option value=2>РљР°С‚Р°РєРѕРјР±С‹</option>"
++"<option value=3>Р—Р°СЃР°РґР°</option>"
++"<option value=4>Р›Р°Р±РёСЂРёРЅС‚</option>"
++"<option value=5>РљСЂРµРїРѕСЃС‚СЊ</option>"
++"<option value=6>РќР° Р·Р°СЃС‚Р°РІСѓ</option>"
++"<option value=7>РџРµСЂРµРїСЂР°РІР°</option>"
++"<option value=8>Р’С…РѕРґ РІ РїРѕРґР·РµРјРµР»СЊРµ</option>"
++"<option value=9>Р‘Р›РР¦</option>"
 +"</select>"
 +"<select size=1 name=minlvl>"
 +"<option value=8>8</option>"
@@ -1978,7 +1978,7 @@ var ddmbox="<form name=CrDemand style=\"padding-right:0px;padding-left:0px;paddi
 +"CreateDemand(CrDemand.map.value,CrDemand.minlvl.value,CrDemand.maxlvl.value,CrDemand.maxp.value)\">"
 +"<br>"
 +"<input type=text name=sortby2 size=20>"
-+"<input type=button value=\"Найти лог\" onclick=\""
++"<input type=button value=\"РќР°Р№С‚Рё Р»РѕРі\" onclick=\""
 +"window.open('finished.lhtml?sortby=2&unick1='+CrDemand.sortby2.value+'')\">"
 +"</td>"
 +"</tr>"
@@ -1990,7 +1990,7 @@ var ddmbox="<form name=CrDemand style=\"padding-right:0px;padding-left:0px;paddi
 +NewButton(0,"65px","black","black","#FFEEC0","gold","Add&nbsp;Host",""
 +"frames['channel_3'].location='newrating_actUser-GoToClanSite_'+MyClan+'.shtml';"
 +"byid('t').innerHTML='&nbsp;';","","")
-+" <font size=1>&#189;-левый/правый клик</font>"
++" <font size=1>&#189;-Р»РµРІС‹Р№/РїСЂР°РІС‹Р№ РєР»РёРє</font>"
 +"</span></td>"
 +"</tr>"
 +"</table></div>"
@@ -2029,7 +2029,7 @@ castle_room="arena_room_1_bmode_1.html";
 med_room="arena_room_1_bmode_1.html";
 }
 // end-move-parm
-if(!LocSite("value","input","Прервать работу") && 
+if(!LocSite("value","input","РџСЂРµСЂРІР°С‚СЊ СЂР°Р±РѕС‚Сѓ") && 
    !top.frames["d_act"].document.getElementById("buttons")) { // wheeluck
 var Moscow_tm=new Date(Date.now()+10800000);
 var Moscow_day=Moscow_tm.getUTCDate();
@@ -2038,7 +2038,7 @@ if(Moscow_hours==10 && wheeluck_day!=Moscow_day ||
    Moscow_hours==11 && wheeluck_day!=Moscow_day) {
 //setTimeout("frames['channel_3'].location='fortunawheeldata_actUser-SpinWheel_1.html';",5555);
 asAudio("server_lost.mp3");
-byid("t").innerHTML="Колесо удачи, День "+Moscow_day;
+byid("t").innerHTML="РљРѕР»РµСЃРѕ СѓРґР°С‡Рё, Р”РµРЅСЊ "+Moscow_day;
 wheeluck_day=Moscow_day;
 }
 } // end-wheeluck
@@ -2052,7 +2052,7 @@ Indicator("red","<input type=button value=html>",25);
 }
 top.frames["d_act"].location=med_room;
 } // end-meta
-var health="осталось";
+var health="РѕСЃС‚Р°Р»РѕСЃСЊ";
 var e1=document.all("VAL_hp").innerHTML;
 var e2=document.all("VAL_mana").innerHTML;
 var e3=document.all("dinjcell").innerHTML;
@@ -2081,73 +2081,73 @@ element.parentNode.insertBefore(text, element);
 // end-msg-log
 AddJS(1,"auto_demand.js");
 }
-if(!LocSite("name","INPUT","Battle{vall}") && nform!=0) { // в лечебницу (от бандита)
+if(!LocSite("name","INPUT","Battle{vall}") && nform!=0) { // РІ Р»РµС‡РµР±РЅРёС†Сѓ (РѕС‚ Р±Р°РЅРґРёС‚Р°)
 top.frames["d_act"].location="arena_room_1_bmode_3.html";
 top.frames["d_pers"].setTimeout("top.frames['d_pers'].frames['channel_3'].location=med_room",1500);
 }
-if(!LocSite("name","INPUT","Battle{vall}") && LocSite("title","BUTTON","Просмотр повтора")) { // в лечебницу (от бандита)
+if(!LocSite("name","INPUT","Battle{vall}") && LocSite("title","BUTTON","РџСЂРѕСЃРјРѕС‚СЂ РїРѕРІС‚РѕСЂР°")) { // РІ Р»РµС‡РµР±РЅРёС†Сѓ (РѕС‚ Р±Р°РЅРґРёС‚Р°)
 top.frames["d_act"].location="arena_room_1_bmode_3.html";
 top.frames["d_pers"].setTimeout("top.frames['d_pers'].frames['channel_3'].location=med_room",1500);
 }
-if(!LocSite("name","INPUT","Battle{vall}") && LocSite("value","INPUT","Присесть")) { // в лечебницу (от бандита)
+if(!LocSite("name","INPUT","Battle{vall}") && LocSite("value","INPUT","РџСЂРёСЃРµСЃС‚СЊ")) { // РІ Р»РµС‡РµР±РЅРёС†Сѓ (РѕС‚ Р±Р°РЅРґРёС‚Р°)
 top.frames["d_act"].location="arena_room_1_bmode_3.html";
 top.frames["d_pers"].setTimeout("top.frames['d_pers'].frames['channel_3'].location=med_room",1500);
 }
 } // end-move-demand
 } // end-active-demand
 if(y==99 && document.CrDemand.act_castle.value==1 && 
-   LocSite("value","INPUT","Подать заявку")) { // wait-fight
+   LocSite("value","INPUT","РџРѕРґР°С‚СЊ Р·Р°СЏРІРєСѓ")) { // wait-fight
 var e3=document.all("dinjcell").innerHTML;
 var xhl=new RegExp(health,"g");
 var bad_loc=RoomReg[1].test(top.frames["d_act"].location);
 if(soclanList.length==1) bad_loc=/arena_room_1_bmode_1/.test(top.frames["d_act"].location);
-if(xhl.test(e3) && !bad_loc) { // в лечебницу
+if(xhl.test(e3) && !bad_loc) { // РІ Р»РµС‡РµР±РЅРёС†Сѓ
 top.frames["d_act"].location=med_room;
 }
 var e3=document.all("dinjcell").innerHTML;
 var xhl=new RegExp(health,"g");
 var bad_loc=RoomReg[0].test(top.frames["d_act"].location);
 if(soclanList.length==1) bad_loc=/arena_room_1_bmode_1/.test(top.frames["d_act"].location);
-if(demand!=3 && !xhl.test(e3) && !bad_loc) { // к замку
+if(demand!=3 && !xhl.test(e3) && !bad_loc) { // Рє Р·Р°РјРєСѓ
 top.frames["d_act"].location=castle_room;
 }
 } // end-wait-fight
 if(document.CrDemand.act_castle.value==1) { // hand-off
 var rhandd=document.getElementById("IMG_rarm").title;
 var lhandd=document.getElementById("IMG_larm").title;
-if(rhandd=="кулаки" || lhandd=="кулаки") {
+if(rhandd=="РєСѓР»Р°РєРё" || lhandd=="РєСѓР»Р°РєРё") {
 document.CrDemand.act_castle.click();
-setTimeout("byid('t').innerHTML='РАЗОРУЖЕН';",14000);
-byid("t").innerHTML="РАЗОРУЖЕН"
+setTimeout("byid('t').innerHTML='Р РђР—РћР РЈР–Р•Рќ';",14000);
+byid("t").innerHTML="Р РђР—РћР РЈР–Р•Рќ"
 +"<audio autoplay loop>"
 +"<source src=\"https://"+hostname_oil+"/audio/pling.mp3\" type=\"audio/mpeg\">"
 +"</audio>";
 }} // end-hand-off
-if(OnOffMytime==1) { // Сигнал mytime
+if(OnOffMytime==1) { // РЎРёРіРЅР°Р» mytime
 if(MyTime(0)) {
 asAudio("Alarm.mp3");
 }}
-if(OnOffMyfort==1) { // На форпост напали!
+if(OnOffMyfort==1) { // РќР° С„РѕСЂРїРѕСЃС‚ РЅР°РїР°Р»Рё!
 if(MyTime(1)) {
 asAudio("ReligionConvert.mp3");
 }}
 if(y==0) { // fight
 document.getElementById("as_audio").innerHTML=as_audio;
 if(OnOffbuttons==1) {
-if(buttons==1) { // активировать кнопки
+if(buttons==1) { // Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РєРЅРѕРїРєРё
 buttons=0;
 Indicator("lawngreen","B5");
 AddJS(1,"export_hopg.js");
 }}
 if(OnOffguard==1) {
-if(guard==1) { // активировать охрану
+if(guard==1) { // Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РѕС…СЂР°РЅСѓ
 guard=0;
 guard_act=1;
 Indicator("lawngreen","G");
 AddJS(1,"export_hopg.js");
 }}
 } // end-fight
-if(LocSite("title","BUTTON","Просмотр повтора") &&
+if(LocSite("title","BUTTON","РџСЂРѕСЃРјРѕС‚СЂ РїРѕРІС‚РѕСЂР°") &&
   !LocSite("value","INPUT","Log") &&
    document.CrDemand.act_castle.value==1) { // log-back
 // msg-log
@@ -2160,12 +2160,12 @@ element.parentNode.insertBefore(text, element);
 // end-msg-log
 var e3=document.all("dinjcell").innerHTML;
 var xhl=new RegExp(health,"g");
-if(xhl.test(e3)) { // в лечебницу
+if(xhl.test(e3)) { // РІ Р»РµС‡РµР±РЅРёС†Сѓ
 // msg-fun-log
 var script=top.frames["d_act"].document.createElement("script");
 script.type="text/javascript";
 script.text="function msgBadEvent() {"
-+"var bad_event=/осталось/.test(top.frames['d_pers'].document.getElementById('dinjcell').innerHTML);"
++"var bad_event=/РѕСЃС‚Р°Р»РѕСЃСЊ/.test(top.frames['d_pers'].document.getElementById('dinjcell').innerHTML);"
 +"if(bad_event) {"
 +"document.getElementById('dinjcell2').innerHTML="
 +"top.frames['d_pers'].document.getElementById('dinjcell').getElementsByTagName('td')[2].innerHTML;"
@@ -2184,12 +2184,12 @@ var control_text=""
 +"<input type=hidden value=Log><br>";
 top.frames["d_act"].document.getElementById("control_msg").innerHTML=control_text;
 frames[0].location=med_room;
-} else { // к замку
+} else { // Рє Р·Р°РјРєСѓ
 // msg-fun-log
 var script=top.frames["d_act"].document.createElement("script");
 script.type="text/javascript";
 script.text="function msgBadEvent() {"
-+"var bad_event=/осталось/.test(top.frames['d_pers'].document.getElementById('dinjcell').innerHTML);"
++"var bad_event=/РѕСЃС‚Р°Р»РѕСЃСЊ/.test(top.frames['d_pers'].document.getElementById('dinjcell').innerHTML);"
 +"if(bad_event) {"
 +"document.location.reload();"
 +"}"
@@ -2239,8 +2239,8 @@ setTimeout(addact,100);
 if(location.host!="newforest.apeha.ru") { // chat
 parent.document.getElementsByTagName("frameset")[0].rows="80%,*,31";
 var itm=top.frames["d_chatact"].document.forms["chat"].elements["filter"];
-itm.value=253; // Сообщения комнаты
-top.frames["d_chatact"].rChat(3); // Сообщения комнаты
+itm.value=253; // РЎРѕРѕР±С‰РµРЅРёСЏ РєРѕРјРЅР°С‚С‹
+top.frames["d_chatact"].rChat(3); // РЎРѕРѕР±С‰РµРЅРёСЏ РєРѕРјРЅР°С‚С‹
 } // end-chat
 }
 if(a>0) {
@@ -2274,15 +2274,15 @@ abilityAbort=1596757;
 abilityCloneDispel=2274948;
 abilityPet=0;
 }
-if(ME.id==203168448) { // Божий одуванчик
+if(ME.id==203168448) { // Р‘РѕР¶РёР№ РѕРґСѓРІР°РЅС‡РёРє
 mbClon=10286766;
 mbHP=5018190;
 mbDestroy=10286774;
-mbFireBall=10286768; //сд
+mbFireBall=10286768; //СЃРґ
 mbArmor=10286770;
 mbFreeze=10286769;
 mbPereman=5116931;
-mbCurse=10286767; //бк
+mbCurse=10286767; //Р±Рє
 abilityFireDust=0;
 abilityKill=0;
 abilityAbort=0;

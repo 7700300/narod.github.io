@@ -36,7 +36,7 @@ var a_count=0;
 var b_count=0;
 function progressBar_Repair() {
 for(i=0; i<document.getElementsByTagName("input").length; i++) {
-if(document.getElementsByTagName("input")[i].value=="×èíèòü" &&
+if(document.getElementsByTagName("input")[i].value=="Ð§Ð¸Ð½Ð¸Ñ‚ÑŒ" &&
    document.getElementsByTagName("input")[i].alt=="") {
 document.getElementsByTagName("input")[i].style.backgroundColor="red";
 document.getElementsByTagName("input")[i].alt=1;
@@ -60,7 +60,7 @@ check_Repair();
 
 function check_Repair() {
 for(i=0; i<document.getElementsByTagName("input").length; i++) {
-if(document.getElementsByTagName("input")[i].value=="×èíèòü") {
+if(document.getElementsByTagName("input")[i].value=="Ð§Ð¸Ð½Ð¸Ñ‚ÑŒ") {
 document.getElementsByTagName("input")[i].style.backgroundColor="lawngreen";
 document.getElementsByTagName("input")[i].value="check";
 Repair_parm=new Array();
@@ -71,8 +71,8 @@ return goRepair(Repair_parm[0],Repair_parm[1]);
 top.frames["d_pers"].document.getElementById("t").innerHTML="Repair.done";
 document.location=document.location;
 }
-if(location.host=="forest.apeha.ru" || !top.frames["d_pers"].LocSite("value","INPUT","Êóçíèöà")) {
-top.frames["d_pers"].document.getElementById("t").innerHTML="Error «Êóçíèöà» not found.";
+if(location.host=="forest.apeha.ru" || !top.frames["d_pers"].LocSite("value","INPUT","ÐšÑƒÐ·Ð½Ð¸Ñ†Ð°")) {
+top.frames["d_pers"].document.getElementById("t").innerHTML="Error Â«ÐšÑƒÐ·Ð½Ð¸Ñ†Ð°Â» not found.";
 } else {
 top.frames["d_pers"].document.getElementById("t").innerHTML=top.frames["d_pers"].LoadImg;
 // READY-Repair

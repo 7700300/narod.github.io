@@ -2,7 +2,7 @@ for(i=0; i < 4; i++) {
 var myImage=document.createElement('img');
 myImage.name='i'+i;
 myImage.id='i'+i;
-myImage.src='https://resources.apeha.ru/upload/1_569.gif';
+myImage.src='http://resources.apeha.ru/upload/1_569.gif';
 document.body.appendChild(myImage);
 }
 var R=0;
