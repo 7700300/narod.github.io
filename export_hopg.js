@@ -158,13 +158,13 @@ function ItemOperationCity(a) { // Сумка
 if(a==0) {
 top.frames["d_act"].location="room.html";
 byid("t").innerHTML=""
-+"<a href=\"#\" onclick=\"AddJS(1,'_ItemOperationCity2.js');byid('t').innerHTML=LoadImg;\" "
++"<a href=\"#\" onclick=\"AddJS(1,'ItemOperationCity2.js');byid('t').innerHTML=LoadImg;\" "
 +"style=\"margin-left:50%;\">[Раздеть/Одеть]</a>";
 }
 if(a==1) {
 top.frames["d_act"].location="smith.html";
 byid("t").innerHTML=""
-+"<a href=\"#\" onclick=\"AddJS(1,'_ioRepair.js');byid('t').innerHTML=LoadImg;\" "
++"<a href=\"#\" onclick=\"AddJS(1,'ioRepair.js');byid('t').innerHTML=LoadImg;\" "
 +"style=\"margin-left:60%;\">[Чинить всё]</a>";
 }
 if(a==2) {
@@ -174,7 +174,7 @@ byid("t").innerHTML=""
 }
 if(a==3) {
 byid("t").innerHTML=""
-+"<a href=\"#\" onclick=\"AddJS(1,'_ioStorage.js');byid('t').innerHTML=LoadImg;\" "
++"<a href=\"#\" onclick=\"AddJS(1,'ioStorage.js');byid('t').innerHTML=LoadImg;\" "
 +"style=\"margin-left:55%;\">[Склад/Сумка]</a>";
 }
 if(a==4) {
@@ -1246,7 +1246,7 @@ return abAudio("call_message.mp3");
 } // end-limit
 top.frames["d_chatact"].chclear();
 top.frames["d_chatact"].chclear();
-if(!DEAD[ME.id] && UNBS[ME.id].flg!=8) AddJS(1,"_jsgame_AddData.js");
+if(!DEAD[ME.id] && UNBS[ME.id].flg!=8) AddJS(1,"jsgame_AddData.js");
 return tmID[0]=setTimeout("autotest()",5555);
 } // end-control
 
@@ -2217,7 +2217,7 @@ setTimeout(addObs,10000);
 }
 
 var addtm=function() {
-AddJS(1,"_Butterfly.js");
+AddJS(1,"Butterfly.js");
 }
 
 function Run() {
